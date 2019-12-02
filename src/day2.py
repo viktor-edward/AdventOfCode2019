@@ -30,8 +30,8 @@ def main():
     print("Part 1:")
     listOfOpcodes[1] = 12
     listOfOpcodes[2] = 2
-    updatedListOfOpcodes = updateOpcodes(listOfOpcodes)
-    print(updatedListOfOpcodes[0])
+    updateOpcodes(listOfOpcodes)
+    print(listOfOpcodes[0])
 
     print("Part 2:")
     solutionFound = False
@@ -41,8 +41,8 @@ def main():
             listOfOpcodes = listOfOpcodesOriginal.copy()
             listOfOpcodes[1] = i
             listOfOpcodes[2] = j
-            updatedListOfOpcodes = updateOpcodes(listOfOpcodes)
-            if updatedListOfOpcodes[0] == solution:
+            updateOpcodes(listOfOpcodes)
+            if listOfOpcodes[0] == solution:
                 print("Solution found: ")
                 print("Noun: " + str(i))
                 print("Verb: " + str(j))
