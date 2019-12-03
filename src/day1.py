@@ -5,7 +5,7 @@ def readFile(fileInput):
     f = open(fileInput, 'r')
     data = []
     for line in f.readlines():
-        data.append(float(line))
+        data.append(line)
     f.close()
     return data
 
